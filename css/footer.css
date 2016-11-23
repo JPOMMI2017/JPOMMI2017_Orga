@@ -1,0 +1,24 @@
+footer {
+    padding: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+.rs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rs > li > a > img {
+    width: 4em;
+}
+
+.mentions-legales {
+    display: flex;
+    justify-content: center;
+}
+.mentions-legales>li>a>img {
+    width: 10em;
+}
