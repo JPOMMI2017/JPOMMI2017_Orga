@@ -1,169 +1,56 @@
-{% extends 'general.html.twig' %}
+{% extends 'general2.html.twig' %}
 
 {% block title %}JPO MMI - Accueil{% endblock %}
 
 {% block body %}
-    <main>
-        <section id="intro">
-            <div>
-                <h1>Département MMI</h1>
 
-                <div id="cadre-titre-baskerville">
-                    <h1 id="titre-baskerville">Journée Portes Ouvertes</h1>
-                </div>
+    <div class="video-container">
+        <video autoplay loop poster="images-contenu/mmi-students.jpg" id="bgvid" class='fillWidth' >
+            <source src="images-contenu/Laptop - 4731.mp4" type="video/mp4"/>
+        </video>
+    </div>
+
+
+    <section id="intro">
+        <div>
+            <h1>Département MMI</h1>
+            <div id="cadre-titre-baskerville">
+                <h1 id="titre-baskerville">Journée Portes Ouvertes</h1>
             </div>
+        </div>
 
 
-            <div>
-                <p id="date">4 FÉVRIER 2017</p>
+        <div>
+            <p id="date">4 FÉVRIER 2017</p>
+            <p id="horaires">9h - 17h</p>
+        </div>
 
-                <p id="horaires">9h - 17h</p>
-            </div>
+        <a href="index.php?page=accueil" class="button">Participez à l'aventure !</a>
 
-            <ul class="countdown">
-                <li>
-                    <span class="days"></span>
+        <ul class="countdown">
+            <li>
+                <span class="days"></span>
 
-                    <p class="timeRefDays"></p>
-                </li>
-                <li>
-                    <span class="hours"></span>
+                <p class="timeRefDays"></p>
+            </li>
+            <li>
+                <span class="hours"></span>
 
-                    <p class="timeRefHours"></p>
-                </li>
-                <li>
-                    <span class="minutes"></span>
+                <p class="timeRefHours"></p>
+            </li>
+            <li>
+                <span class="minutes"></span>
 
-                    <p class="timeRefMinutes"></p>
-                </li>
-                <li>
-                    <span class="seconds"></span>
+                <p class="timeRefMinutes"></p>
+            </li>
+            <li>
+                <span class="seconds"></span>
 
-                    <p class="timeRefSeconds"></p>
-                </li>
-            </ul>
-            <script src='js/countdown/jquery.min.js'></script>
-            <script async src="js/countdown/countdown.js"></script>
-        </section>
-
-
-        <section class="red-block">
-            <h2>Ta Mission</h2>
-
-            <div class="flex-block-1">
-                <img src="images-contenu/mmi-batiment-01.jpg" alt="batiment">
-
-                <div>
-                    <p>Ta mission consiste à infiltrer le département MMI de Montbéliard lors
-                        de la Journée Portes Ouvertes du Nord Franche-Comté.</p>
-
-                    <div id="mission-tasks">
-                        <p>→ Visite le batiment</p>
-
-                        <p>→ Questionne les professeurs</p>
-
-                        <p>→ Échange avec les étudiants</p>
-
-                        <p>→ Donne un coup de pouce à ton admission</p>
-                    </div>
-                </div>
-
-            </div>
-            <h4>Réagis sur les réseaux sociaux avec <span class="white-hstg">#JPO #MMI2017</span></h4>
-        </section>
-
-
-        <section>
-            <h2>JPO MMI, qu'est-ce que c'est ?</h2>
-
-            <p>Il s’agit de la Journée Portes Ouvertes du <a href="http://mmimontbeliard.com/formation-mmi">DUT MMI</a>
-                et de la
-                <a href="http://mmimontbeliard.com/formation-lpwd#">Licence Pro Webdesign</a>.</p>
-
-            <div class="flex-block-2">
-                <img src="images-contenu/mmi-students.jpg" alt="students">
-
-                <div>
-                    <p>Tu es passionné par le web, l’audiovisuel ou le graphisme ?</p>
-
-                    <p>Tu es un programmeur dans l’âme ?</p>
-
-                    <p>Fervent connaisseur des réseaux sociaux, tu souhaites devenir community-manager ?</p>
-
-                    <p>Pleins de débouchés professionnels s’offrent à toi alors n’attends plus et viens découvrir MMI
-                        !</p>
-                </div>
-            </div>
-
-            <div class="red-block">
-                <p class="insert">Informe toi sur les différents pilliers de la formation : la communication, le design,
-                    le développement et l’audiovisuel.</p>
-            </div>
-
-            <div>
-                <p>Il n’y a qu’en venant à la JPO MMI
-                    que tu auras les réponses à toutes
-                    tes questions. Rentre au coeur
-                    de la formation et passe un bon
-                    moment tout au long de ta visite
-                    guidée !</p>
-
-                <p>Nous te donnons rendez-vous le 4 février 2017 dans le hall de l'amphi-théâtre du département MMI où
-                    tu seras accueilli par Pascal Chatonnay, le chef du département.</p>
-            </div>
-        </section>
-
-
-        <section class="red-block">
-            <h2>Infos Pratiques</h2>
-
-            <div id="adresse">
-                <p class="p-centrer">4, place Tharradin</p>
-
-                <p class="p-centrer"> au pôle universitaire des Portes du Jura</p>
-
-                <p class="p-centrer"></p>
-
-                <p class="p-centrer">25 200 | Montbéliard</p>
-            </div>
-
-            <img src="images-contenu/map.PNG" alt="map" class="map">
-
-            <p class="p-centrer">→ Prévoir environ 2 heures pour une visite complète.</p>
-        </section>
-
-
-        <section>
-            <h2>Newsletter</h2>
-
-            <p>Inscris-toi à notre newsletter pour recevoir un rappel avant la JPO et pour apprendre en exclusivité
-                quelles surprises vous seront proposées lors de cette journée.</p>
-
-            <div class="red-block news-block">
-                <div>
-                    <label>Ton Nom :</label>
-
-                    <p><input type="text" name="nom" size="45px"></p>
-                </div>
-                <div>
-                    <label>Ton Prénom :</label>
-
-                    <p><input type="text" name="prenom" size="45px"></p>
-                </div>
-                <div>
-                    <label>Ton Mail :</label>
-
-                    <p><input type="text" name="mail" size="45px"></p>
-                </div>
-                <div id="pad-but-env">
-                    <button id="news-but">ENVOYER</button>
-                </div>
-            </div>
-
-        </section>
-
-    </main>
-
-
+                <p class="timeRefSeconds"></p>
+            </li>
+        </ul>
+        <script src='js/countdown/jquery.min.js'></script>
+        <script async src="js/countdown/countdown.js"></script>
+    </section>
 
 {% endblock body %}

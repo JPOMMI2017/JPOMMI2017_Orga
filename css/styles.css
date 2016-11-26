@@ -7,13 +7,7 @@
 /*                                             PAGE : ACCUEIL                                           */
 
 /*                                          IMAGE DE FOND - INTRO                                       */
-#intro {
-    color: white;
-    background-color: white;
-    background-image: url(images-interface/jpo-big.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 
 /*                                               COUNTDOWN                                              */
@@ -403,3 +397,60 @@ div.red-block>p {
         margin-top: 50px;
     }
 }
+
+
+
+
+
+#bgvid{position:fixed;right:0;bottom:0;
+    min-width:100%;min-height:100%;
+    width:auto;height:auto; z-index:-999;
+    overflow:hidden;
+    background:url(../images/background_teasing.jpg) no-repeat;
+    background-size:cover;}
+video{display:block;}
+
+.countdown > li:nth-child(1) {
+    margin-right: -50px;
+}
+
+.countdown > li:nth-child(2) {
+    margin-right: -50px;
+    margin-left: -50px;
+}
+
+.countdown > li:nth-child(3) {
+    margin-right: -50px;
+    margin-left: -50px;
+}
+
+.countdown > li:nth-child(4) {
+    margin-left: -50px;
+}
+
+
+
+.button{
+    display:inline-block;
+    position:relative;
+    margin:0.4em;  padding:1em;
+    cursor:pointer;
+    background:#e03131;
+    z-index:0;
+    color: black;
+    font-family: Monserrat;
+    font-size: 20px;
+
+}
+.button:before {
+    content: "";
+    position: absolute;
+    z-index:-1;
+    top: 0;  left: 0;  right: 0;  bottom: 0;
+    background: #e1e1e1;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform .3s ease-out;
+}
+
+.button:hover:before{transform: scaleX(1);}
