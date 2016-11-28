@@ -1,5 +1,9 @@
 footer {
-    padding: 30px;
+    padding-top: 2px;
+    padding-left: 30px;
+    padding-bottom: 1px;
+    padding-right: 30px;
+
 }
 
 li {
@@ -12,7 +16,7 @@ li {
 }
 
 .rs > li > a > img {
-    width: 4em;
+    width: 2em;
 }
 
 .mentions-legales {
@@ -20,5 +24,35 @@ li {
     justify-content: center;
 }
 .mentions-legales>li>a>img {
-    width: 10em;
+    width: 7em;
+}
+
+footer > div {
+    width: 33%;
+    display: table-cell;
+    padding: 50px;
+    padding-top: 0;
+}
+
+.newsletter {
+    padding-bottom: 0;
+}
+
+
+@media (max-width: 600px){
+    footer > div {
+        display: list-item;
+        width: auto;
+        list-style-type: none;
+
+    }
+    .menu > li {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px){
+    .newsletter {
+        padding-left: 0;
+    }
 }

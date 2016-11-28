@@ -6,9 +6,90 @@
 
 /*                                             PAGE : ACCUEIL                                           */
 
-/*                                          IMAGE DE FOND - INTRO                                       */
+body {
+    margin:0;
+}
 
 
+                                            /* PARTICULES */
+
+@media (max-width: 700px) {
+    #particles-js{
+        padding-top: 250px;
+    }
+}
+
+
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-color: #a1bbef;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+
+.script{
+    position: relative;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#intro2 {
+    position: absolute;
+    margin-top: -40%;
+    text-align: center;
+    margin-left: 35%;
+}
+
+.transparent {
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    opacity: 0.5;
+    border: solid black 2px;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 930px) {
+    #intro2 {
+        position: absolute;
+        margin-top: -42%;
+        text-align: center;
+        margin-left: 33%;
+    }
+}
+
+
+@media (max-width: 700px) {
+    #intro2 {
+        position: absolute;
+        margin-top: -70%;
+        text-align: center;
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 530px) {
+    #intro2 {
+        position: absolute;
+        margin-top: -70%;
+        text-align: center;
+        margin-left: 13%;
+    }
+}
+
+@media (max-width: 450px) {
+    #intro2 {
+        position: absolute;
+        margin-top: -90%;
+        text-align: center;
+        margin-left: 1px;
+    }
+}
 
 /*                                               COUNTDOWN                                              */
 ul.countdown {
@@ -172,7 +253,6 @@ div {
     margin-left: auto;
     width: 250px;
 }
-
 
 
 /*                                                      PAGE CONNEXION                                  */

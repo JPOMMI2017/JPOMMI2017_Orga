@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="js/countdown/modernizr.js" type="text/javascript"></script>
+    <script src="js/particles/particules.js" type="text/javascript"></script>
     {% block title %}
     {% endblock title %}
 </head>
@@ -15,7 +16,7 @@
 
 {% block header %}
     <header>
-        <a href="index.php?page=index"><img src="svg/mmi-stroke-logo-noir.svg" alt="logo mmi" id="logo-noir"></a>
+        <a href="index.php?page=accueil"><img src="svg/mmi-stroke-logo-noir.svg" alt="logo mmi" id="logo-noir"></a>
 
         <nav>
             <div id="menuToggle">
@@ -39,8 +40,17 @@
 
 {% block footer %}
     <footer>
-        <div>
-            <h2 id="footer-titre">Suivez-nous</h2>
+
+        <div class="menu">
+            <h4>Menu</h4>
+            <li><a href="index.php?page=accueil" class="link-menu">ACCUEIL</a></li>
+            <li><a href="index.php?page=metiers" class="link-menu">POUR QUELS MÉTIERS</a></li>
+            <li><a href="index.php?page=connexion" class="link-menu">CONNEXION</a></li>
+        </div>
+
+
+        <div class="footer">
+            <h4>Suivez-nous</h4>
 
             <div>
                 <ul class="rs">
@@ -54,11 +64,42 @@
                     <li><a href="http://www.univ-fcomte.fr/"><img src="images-contenu/ufc.png" alt="logo ufc"></a></li>
                 </ul>
             </div>
-        </div>
+
         <div>
             <p class="p-centrer">Département MMI Montbéliard | Tous droits réservés</p>
         </div>
+        </div>
+
+        <div class="newsletter">
+            <h4>Newsletter</h4>
+
+            <p>Inscris-toi à notre newsletter pour recevoir un rappel avant la JPO</p>
+
+            <div class="red-block news-block">
+                <div>
+                    <label>Ton Nom :</label>
+
+                    <p><input type="text" name="nom" size="45px"></p>
+                </div>
+                <div>
+                    <label>Ton Prénom :</label>
+
+                    <p><input type="text" name="prenom" size="45px"></p>
+                </div>
+                <div>
+                    <label>Ton Mail :</label>
+
+                    <p><input type="text" name="mail" size="45px"></p>
+                </div>
+                <div id="pad-but-env">
+                    <button id="news-but">ENVOYER</button>
+                </div>
+            </div>
+
+        </div>
     </footer>
+
+
 {% endblock footer %}
 
 </body>
