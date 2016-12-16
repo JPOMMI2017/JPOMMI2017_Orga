@@ -8,7 +8,7 @@
 body {
     font-family: OpenSans-Regular, sans-serif;
     font-size: 16px;
-    background-color: white;
+    margin: 0;
 }
 
 
@@ -72,36 +72,48 @@ footer {
 
 /*                                                  PAGE ACCUEIL                        */
 
+.saut {
+    font-family: OpenSans-Regular, sans-serif;
+}
+
+aside {
+    font-family: OpenSans-Regular, sans-serif;
+}
+
+main {
+    font-family: OpenSans-Regular,sans-serif;
+}
+
 #date {
     font-family: Montserrat, sans-serif;
     font-size: 26px;
-    color: #222222;
-    background-color: #e03131;
+    color: white;
     padding: 15px;
 }
+
+
 
 #horaires {
     font-family: LibreBaskerville, sans-serif;
     color: white;
     font-size: 22px;
+    margin-bottom: 50px;
 }
 
 
 #mission-tasks {
     text-align: center;
-    color: white;
+    color: black;
 }
 .white-hstg {
-    color: white;
+    color: black;
 }
 
-.blue-block {
-    background-color: #a1bbef;
-}
 
-.red-block {
-    background-color: #e03131;
-    padding: 20px;
+
+.newsletter > p:nth-child(2){
+    font-family: OpenSans-Regular, sans-serif;
+    text-align: center;
 }
 
 label {
@@ -201,17 +213,4 @@ p.connexion-sous-titre {
     transition: color 0.3s ease;
 }
 
-/*                                              AJOUTE PAR MELANIE                                          */
 
-
-body > div:nth-child(4) {
-    background-color: #a1bbef;
-}
-
-body > div:nth-child(6) {
-    background-color: #e03131;
-}
-
-body > div:nth-child(8) {
-    background-color: #a1bbef;
-}
