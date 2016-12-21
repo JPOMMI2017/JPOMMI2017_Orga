@@ -6,7 +6,7 @@
 
 
     <div class="video_accueil">
-        <video autoplay loop src="images-contenu/video.mp4">
+        <video autoplay loop src="images-contenu/video.mp4"></video>
     </div>
 
     <div class="intro2">
@@ -93,7 +93,7 @@
     </main>
 
     <aside class="saut">
-        <img src="images-contenu/map.PNG" alt="map" class="map">
+        <p id="map"></p>
         <h2>Infos Pratiques</h2>
         <div id="adresse">
             <p class="p-centrer">4, place Tharradin</p>
@@ -134,7 +134,24 @@
 
     </div>
 
+    <script>
+        function initMap() {
+            var latlngMap = {lat: 47.495535, lng: 6.805265};
 
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: latlngMap,
+                zoom: 17
+            });
+
+            var marqueur = new google.maps.Marker({
+                position: latlngMap,
+                map: map,
+                title: 'JPO MMI Montbéliard'
+            });
+
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7gfdSoZhXFhAvluQlL7DfANeRdjGLhSU&callback=initMap"></script>
 
 
 
