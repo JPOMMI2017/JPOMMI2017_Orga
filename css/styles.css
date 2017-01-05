@@ -76,6 +76,8 @@ aside {
 
 main {
     background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #mission-tasks{
@@ -309,7 +311,7 @@ div {
 
 
 #map {
-    height: 300px;
+    height: 310px;
     width: 300px;
     display: block;
     margin-left: auto;
@@ -473,15 +475,7 @@ body > div {
     padding-top: 0;
 }
 
-/*
-input[type="text"], textarea, select {
-    padding:3px;
-    border:1px solid #F5C5C5;
-    border-radius:5px;
-    width:200px;
-    box-shadow:1px 1px 2px #C0C0C0 inset;
-}
-*/
+
 fieldset {
     padding:0 20px 20px 20px;
     margin-bottom:10px;
@@ -491,9 +485,6 @@ fieldset {
 
 }
 
-input, textarea, select, option {
-    background-color:#FFF3F3;
-}
 
 body > div:nth-child(4) {
     padding: 10px;
@@ -504,7 +495,7 @@ body > div:nth-child(6){
 }
 
 body > div:nth-child(8){
-    padding: 10px;
+    padding: 30px;
 }
 
 body > div:nth-child(4){
