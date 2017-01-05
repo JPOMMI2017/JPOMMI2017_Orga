@@ -1,0 +1,76 @@
+{% extends 'general.html.twig' %}
+
+{% block title %}JPO MMI - Je souhaite postuler{% endblock %}
+
+{% block body %}
+
+
+    <main>
+
+        <div class="block-form-post">
+
+            <div id="intro-form-post">
+                <h3>MMI Montbéliard</h3>
+                <p class="p-centrer">Une fois ta visite terminée, nous t'incitons à venir remplir ce formulaire. Celui-ci sera pris en compte avec ta canditature.</p>
+                <p class="p-centrer red-star">* Obligatoire</p>
+            </div>
+
+            <div>
+
+                <div class="form-post-content">
+                    <label for="edit-submitted-prenom">Prénom <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
+                    <p><input required="required" type="text" class="form-control" id="edit-submitted-prenom"></p>
+                </div>
+
+                <div class="form-post-content">
+                    <label for="edit-submitted-nom">Nom <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
+                    <p><input required="required" type="text" class="form-control" id="edit-submitted-nom"></p>
+                </div>
+
+                <div class="form-post-content">
+                    <label for="edit-submitted-mail">Mail <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
+                    <p><input required="required" type="mail" class="form-control" id="edit-submitted-mail"></p>
+                </div>
+
+                <div class="form-post-content">
+                    <label for="edit-submitted-departement">Département</label>
+                    <p><input type="text" class="form-control" id="edit-submitted-departement"></p>
+                </div>
+
+                <div class="form-post-content">
+                    <label for="edit-submitted-formation">Bac ou formation <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
+                    <p><input required="required" type="text" class="form-control" id="edit-submitted-formation"></p>
+                </div>
+
+                <div class="form-post-content">
+                    <label for="edit-submitted-niveau">Niveau de scolarité <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
+
+                    <div id="edit-submitted-niveau">
+                        <p><input type="radio" id="prem" name="niveau"> Première</p>
+                        <p><input type="radio" id="term" name="niveau"> Terminale</p>
+                        <p><input type="radio" id="etudesup" name="niveau"> Études supérieures</p>
+                        <p><input type="radio" id="autre" name="niveau"> Autre</p>
+                    </div>
+                </div>
+
+                <div class="form-post-content">
+                    <label for="edit-submitted-quelles-sont-vos-principales-motivations-pour-venir-en-src">Quelles sont vos principales motivations pour venir en SRC <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
+                    <div class="form-textarea-wrapper"><textarea id="edit-submitted-quelles-sont-vos-principales-motivations-pour-venir-en-src" class="form-control" cols="70" rows="10"></textarea></div>
+                </div>
+
+
+                <div class="form-post-content">
+                    <input class="form-submit" type="submit" name="op" value="Soumettre"/>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+
+
+{% endblock %}
