@@ -257,7 +257,7 @@ p {
     text-align: center;
 }
 footer {
-    /* forcer l’affichage sous le contenu et la colonne */
+    /* forcer lï¿½affichage sous le contenu et la colonne */
     clear:both;
 }
 
@@ -322,11 +322,14 @@ div {
 /*          FORMULAIRE NEWSLETTER      */
 #news-but {
     float: right;
+    margin-right: auto;
+    margin-left: auto;
     background-color: white;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 4px;
     padding-bottom: 4px;
+    border-radius: 5px;
 }
 
 #pad-but-env {
@@ -386,7 +389,7 @@ div {
     padding-right: 110px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #connex-block {
@@ -423,7 +426,7 @@ input[name="mdp-ent"]{
 /*                                  PAGE FORMULAIRE PARTICIPATION                       */
 
 textarea {
-    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
+    /* Pour aligner correctement les champs multilignes et leurs ï¿½tiquettes */
     vertical-align: top;
 
     /* Pour donner assez d'espace pour entrer du texte */
@@ -462,7 +465,7 @@ textarea {
 input[type=radio] {
     background-color:transparent;
     border:none;
-    width:10px;
+    width:11px;
 }
 
 #message {
@@ -474,14 +477,12 @@ body > div {
     margin-bottom: 20px;
     padding-top: 0;
 }
-
-
 fieldset {
     padding:0 20px 20px 20px;
     margin-bottom:10px;
     border:1px solid black;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
 
 }
 
@@ -530,7 +531,7 @@ div.red-block>p {
 
 
 .form-control {
-    height: 34px;
+    height: 25px;
     padding: 6px 12px;
     background-image: none;
     border: 1px solid #ccc;
