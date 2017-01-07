@@ -163,14 +163,6 @@ div.video > h1:nth-child(1){
 }
 
 
-.transparent {
-    border: solid white 2px;
-    color: white;
-    padding: 10px;
-    font-size: 20px;
-}
-
-
 
 
 
@@ -319,6 +311,26 @@ div {
 }
 
 
+
+.transparent {
+    border: solid white 2px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+/* hover chgt de couleur pour les boutons "Découvrir" et "Je participe" */
+.transparent:hover {
+    color: black;
+    border: solid black 2px;
+}
+
+
+
+
+
+
+
 /*          FORMULAIRE NEWSLETTER      */
 #news-but {
     float: right;
@@ -346,6 +358,8 @@ div {
     clear: both;
     background-color: #484e79;
     margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 
@@ -374,9 +388,9 @@ div {
     margin-right: auto;
     margin-left: auto;
     padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 325px;
 }
 
 .connex-but {
