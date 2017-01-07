@@ -570,6 +570,21 @@ div.red-block>p {
 
 
 
+/*                                    PAGE indexUser                                                              */
+.menu-user {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 20px 70px;
+
+}
+
+
+
+
 
 /*                                                RESPONSIVE                                                          */
 
