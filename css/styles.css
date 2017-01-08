@@ -317,10 +317,12 @@ div {
     color: white;
     padding: 10px;
     font-size: 20px;
-    transition: color 0.3s ease;
 }
 /* hover chgt de couleur pour les boutons "Découvrir" et "Je participe" */
-.transparent:hover {
+.link-but {
+  transition: color 0.3s ease;
+}
+.link-but:hover {
     color: black;
     border: solid black 2px;
 }
@@ -573,15 +575,48 @@ div.red-block>p {
 /*                                    PAGE indexUser                                                              */
 .menu-user {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 300px;
   border: solid black 1px;
   border-radius: 10px;
   padding: 20px 70px;
-
+  background-color: white;
 }
 
+#menu-user {
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+#indexUsermain {
+  background-color: #484e79;
+  padding-bottom: 40px;
+}
+
+
+/*                                        PAGE JPO MMI EN LIVE                                                      */
+.col-blog {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#col-main {
+  width: 70%
+}
+
+#col-aside {
+  background-color: #484e79;
+  width: 30%;
+  padding: 20px 25px;
+  border-radius: 2px;
+  color: white;
+}
+
+main > div img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 

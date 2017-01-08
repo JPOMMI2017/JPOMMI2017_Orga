@@ -4,7 +4,7 @@
 
 {% block body %}
 
-<main>
+<main id="indexUsermain">
 
     <div id="intro-form-post">
         <h3>JPO MMI</h3>
@@ -14,11 +14,16 @@
     <div class="menu-user">
       <p class="p-centrer">Tu as accès à :</p>
 
-      <div>
+      <div id="menu-user">
       <!- à intégrer avec la gestion des droits d'accès ->
-          <p>▶ Liste des médias</p>
-          <p>▶ Formulaire de participation</p>
-          <p>▶ etc </p>
+          <p>▶ <a href="index.php?page=publications">Gestion des publications</a></p>
+          <p>▶ <a href="index.php?page=medias">Gestion des médias</a></p>
+          <p>▶ <a href="index.php?page=participation">Formulaire de participation</a></p>
+          <p>▶ <a href="index.php?page=participants">Liste des participants</a></p>
+          <p>▶ <a href="index.php?page=postuler">Formulaire pour les postulants</a></p>
+          <p>▶ <a href="index.php?page=postulants">Liste des postulants</a></p>
+          <p>▶ <a href="index.php?page=newsletter">Liste des inscrits à la newsletter</a></p>
+
       </div>
     </div>
 
