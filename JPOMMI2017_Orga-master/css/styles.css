@@ -1,0 +1,705 @@
+
+
+
+/*                                STYLES GRAPHIQUES / INTERACTION / ANIMATION                                         */
+
+/*                                             PAGE : ACCUEIL                                       */
+
+.video_accueil > video{
+    width: 100%;
+    height: auto;
+
+}
+
+.video_accueil{
+    z-index: 1;
+    position: absolute;
+    clear: both;
+    width: 100%;
+}
+
+div.video {
+    margin-top: 7%;
+}
+
+.intro2{
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    padding-top:70px;
+}
+
+body > div:nth-child(5) {
+    background-color: white;
+}
+
+
+
+
+a.transparent:nth-child(3){
+    margin-right: 20px;
+}
+
+a.transparent:nth-child(4){
+    margin-left: 20px;
+}
+
+.newsletter > h1:nth-child(1){
+    text-align: center;
+}
+
+body > img:nth-child(2){
+    width: 100%;
+    padding-top: 60px;
+}
+
+
+.kesako {
+    float:left;
+    width:30%;
+    text-align:center;
+    height:100%;
+    margin: 10px;
+    padding: 0;
+}
+
+
+aside {
+    float:left;
+    width:30%;
+    text-align:center;
+    height:100%;
+    margin: 10px;
+    background-color: white;
+}
+
+main {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#mission-tasks{
+    color: black;
+}
+
+body > main:nth-child(5){
+    padding: 0;
+    text-align: center;
+}
+
+body > aside:nth-child(4) > img:nth-child(1){
+    width: 250px;
+    height: 250px;
+}
+
+body > main:nth-child(5) > img:nth-child(1){
+    width: 250px;
+    height: 250px;
+}
+
+.map{
+    width: 250px;
+    height: 250px;
+}
+
+
+@media all and (max-width: 800px) {
+    .kesako {
+        width:100%;
+    }
+    aside {
+        width:100%;
+    }
+}
+
+@media all and (max-width: 801px) and (min-width: 601px) {
+    .kesako {
+        width:80%;
+    }
+    .saut {
+        width:100%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .video_accueil {
+        display: none;
+    }
+    .intro2 {
+        background-image: url("images-interface/jpo-big.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: 100px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .countdown{
+        margin-bottom: 0;
+    }
+    div.video{
+        margin-top: 0;
+    }
+
+}
+
+
+
+
+div.video {
+    background-color: #484e79;
+    text-align: center;
+}
+
+div.video > h1:nth-child(1){
+    margin-top: 0;
+}
+
+@media (max-width: 600px) {
+    div.video > iframe{
+        width: 100%
+    }
+}
+
+
+
+
+
+
+/*                                               COUNTDOWN                                              */
+ul.countdown {
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    border-radius: 5px;
+    transition-duration: .3s;
+    padding:5px;
+    padding-bottom: 20px;
+}
+
+ul.countdown > li {
+    width: 24.4333%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+ul.countdown > li > span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+
+/*                                          PAGE CONNEXION                                                  */
+
+#connexion {
+    background-image: url(images-interface/background-connexion.jpg);
+    color: white;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+/*                                          MISE EN PAGE / STYLES                                                     */
+
+
+html {
+    min-width: 320px;
+}
+
+body {
+    position: relative;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    padding-top: 50px;
+}
+
+p {
+    line-height: 20px;
+}
+
+.p-centrer {
+    text-align: center;
+}
+footer {
+    /* forcer l�affichage sous le contenu et la colonne */
+    clear:both;
+}
+
+
+
+
+/*                                                  LES LOGOS MMI                                       */
+
+#logo-noir {
+    width: 3.5em;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#logo-noir-footer {
+    width: 50%;
+}
+
+
+/*                                              PAGE ACCUEIL                                        */
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#intro {
+    text-align: center;
+}
+
+#date {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.insert {
+    text-align: center;
+}
+
+#adresse>p {
+    font-size: 18px;
+}
+
+
+#map {
+    height: 310px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.transparent {
+    border: solid white 2px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+/* hover chgt de couleur pour les boutons "Découvrir" et "Je participe" */
+.link-but {
+  transition: color 0.3s ease;
+}
+.link-but:hover {
+    color: black;
+    border: solid black 2px;
+}
+
+
+
+
+
+
+
+/*          FORMULAIRE NEWSLETTER      */
+#news-but {
+    float: right;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 5px;
+}
+
+#pad-but-env {
+    padding: 5px;
+}
+
+.news-block {
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+}
+
+.newsletter {
+    clear: both;
+    background-color: #484e79;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+.red-block {
+    padding-bottom: 10px;
+}
+
+
+
+
+/*                                                      PAGE CONNEXION                                  */
+
+
+.icon-connex {
+    width: 9%;
+    display: inline-block;
+}
+
+#connexion-section {
+    padding: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#connexion-div {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 325px;
+}
+
+.connex-but {
+    color: white;
+    background-color: #e03131;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+#connex-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.p-inline {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+input[name="idt-ent"]{
+    border: none;
+    border-bottom: 1px solid white;
+    font-family: OpenSans-Regular, sans-serif;
+    background-color:transparent;
+    color: white;
+    height: 20px;
+}
+
+input[name="mdp-ent"]{
+    border: none;
+    border-bottom: 1px solid white;
+    font-family: OpenSans-Regular, sans-serif;
+    background-color:transparent;
+    color: white;
+    height: 20px;
+}
+
+
+/*                                  PAGE FORMULAIRE PARTICIPATION                       */
+
+textarea {
+    /* Pour aligner correctement les champs multilignes et leurs �tiquettes */
+    vertical-align: top;
+
+    /* Pour donner assez d'espace pour entrer du texte */
+    height: 5em;
+
+    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+       Cela ne marche pas avec tous les navigateurs  */
+    resize: vertical;
+}
+
+
+#intro-form-post {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+/*                                                  PAGE POUR QUELS METIERS                             */
+
+.cloud { padding: 2px; line-height: 3em; text-align: center; }
+.cloud a { padding: 0; }
+
+.cloud { margin: 0; }
+.cloud li { display: inline; }
+
+.cloud a {
+    text-decoration: none;
+}
+
+
+
+/*                                              AJOUTE PAR MELANIE                                          */
+
+
+input[type=radio] {
+    background-color:transparent;
+    border:none;
+    width:11px;
+}
+
+#message {
+    margin-right: -8px;
+}
+
+body > div {
+    margin-top:-10px;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+fieldset {
+    padding:0 20px 20px 20px;
+    margin-bottom:10px;
+    border:1px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+
+body > div:nth-child(4) {
+    padding: 10px;
+}
+
+body > div:nth-child(6){
+    padding: 10px;
+}
+
+body > div:nth-child(8){
+    padding: 30px;
+}
+
+body > div:nth-child(4){
+    padding-left:6px;
+}
+
+h5:nth-child(1) {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+
+
+/* accueil */
+div.red-block>p {
+    color: white;
+}
+.insert {
+    font-size: 20px;
+}
+
+
+
+
+
+/*                                  PAGE FORMULAIRE POSTULANT                           */
+
+.block-form-post {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.form-control {
+    height: 25px;
+    padding: 6px 12px;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-post-content {
+    padding-top: 20px;
+}
+
+.form-submit {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+
+
+/*                                    PAGE indexUser                                                              */
+.menu-user {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 20px 70px;
+  background-color: white;
+}
+
+#menu-user {
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+#indexUsermain {
+  background-color: #484e79;
+  padding-bottom: 40px;
+}
+
+
+/*                                        PAGE JPO MMI EN LIVE                                                      */
+.col-blog {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#col-main {
+  width: 70%
+}
+
+#col-aside {
+  background-color: #484e79;
+  width: 30%;
+  padding: 20px 25px;
+  border-radius: 2px;
+  color: white;
+}
+
+main > div img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+/*                                                RESPONSIVE                                                          */
+
+
+@media (min-width:600px) {
+    ul.countdown {
+        margin-top: 45px;
+        padding-bottom: 50px;
+    }
+    #intro {
+        padding-top: 70px;
+    }
+    #date {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    h2 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 900px){
+    .flex-block-1 {
+        display: flex;
+    }
+    .flex-block-1>div, .flex-block-2>div {
+        margin-top: 35px;
+    }
+    .flex-block-1>div>p, .flex-block-2>div>p {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .flex-block-2 {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #mission-tasks {
+        margin-top: 50px;
+    }
+}
+
+
+
+#bgvid{position:fixed;right:0;bottom:0;
+    min-width:100%;min-height:100%;
+    width:auto;height:auto; z-index:-999;
+    overflow:hidden;
+    background:url(../images/background_teasing.jpg) no-repeat;
+    background-size:cover;}
+video{display:block;}
+
+
+
+
+
+.button{
+    display:inline-block;
+    position:relative;
+    margin:0.4em;  padding:1em;
+    cursor:pointer;
+    background:#e03131;
+    z-index:0;
+    color: black;
+    font-family: Monserrat;
+    font-size: 20px;
+
+}
+.button:before {
+    content: "";
+    position: absolute;
+    z-index:-1;
+    top: 0;  left: 0;  right: 0;  bottom: 0;
+    background: #e1e1e1;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform .3s ease-out;
+}
+
+.button:hover:before{transform: scaleX(1);}

@@ -1,0 +1,123 @@
+{% extends 'general.html.twig' %}
+
+{% block title %}<title>JPO MMI - Je participe</title>{% endblock %}
+
+{% block body %}
+    <main>
+        <div id="intro-form-post">
+            <h3>JPO MMI</h3>
+            <p class="p-centrer">La Journée Portes Ouvertes est un moment clé au sein du département MMI. La réussite de cet événement passe avant tout par votre participation. Nous comptons sur vous !</p>
+            <p class="p-centrer red-star">* Obligatoire</p>
+        </div>
+
+
+
+        <div>
+            <fieldset>
+                <legend><h5>Qui êtes-vous ? *</h5>
+                    <!--  <p class="red-star">*</p> -->
+                </legend>
+
+                <div>
+                    <label>Votre nom :</label>
+                    <p><input type="text" name="nom" class="form-control"></p>
+                </div>
+                <div>
+                    <label>Votre prénom :</label>
+                    <p><input type="text" name="prenom" class="form-control"></p>
+                </div>
+
+
+                <input type="radio" id="mmi1" name="choix"> MMI 1
+                <input type="radio" id="mmi2" name="choix"> MMI 2
+                <input type="radio" id="lpwd" name="choix"> LPWD
+                <input type="radio" id="prof" name="choix"> Enseignant
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend><h5>Quand serez-vous présent ? *</h5></legend>
+
+
+                <div>
+                    <input type="checkbox" id="#" name="choix"> Matin
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix"> Après-midi
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix"> Journée entière
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix"> Je souhaite le repas offert.
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix"> Je peux rester pour aider à ranger à la fin.
+                </div>
+            </fieldset>
+
+        </div>
+
+        <div>
+            <fieldset>
+                <legend><h5>Quel poste souhaitez-vous ? *</h5></legend>
+
+                <div>
+                    <input type="checkbox" id="#" name="choix" value="oui"> Présentation d'un enseignement
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix" value="oui"> Chargé des visites guidées
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix" value="oui"> Stand BDE + Événement intra-MMI
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix" value="oui"> Stand Frigo Video + Frigo Papier
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix" value="oui"> Stand montage photo
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix" value="oui"> Étudiant volant (prendre des photos et vidéos)
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix" value="oui"> Rédacteur
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend> <h5>Quel enseignement voulez-vous présenter ? *</h5></legend>
+
+                <div>
+                    <input type="checkbox" id="#" name="choix" value="oui"> Communication
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix" value="oui"> Design
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix" value="oui"> Développement
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix" value="oui"> Langues, Semestre au Canade, Stages
+                </div>
+                <div>
+                    <input type="checkbox" id="#" name="choix" value="oui"> Licence Pro WebDesign
+                </div>
+            </fieldset>
+
+        </div>
+
+        <div>
+            <fieldset>
+                <legend><h5>Une suggestion ?</h5></legend>
+                <textarea id="message" style="width: 400px; height: 200px;" class="form-control"></textarea>
+            </fieldset>
+        </div>
+
+
+        <button id="particip-but"><a href="index.php?page=remerciement">Je participe !</a></button>
+    </main>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'general.html.twig' %}
+
+{% block title %}<title>JPO MMI - Accueil</title>{% endblock title %}
+
+{% block body %}
+
+<main id="indexUsermain">
+
+    <div id="intro-form-post">
+        <h3>JPO MMI</h3>
+        <p class="p-centrer">Bienvenue sur ton espace d'accueil personnel.</p>
+    </div>
+
+    <div class="menu-user">
+      <p class="p-centrer">Tu as accès à :</p>
+
+      <div id="menu-user">
+      <!- à intégrer avec la gestion des droits d'accès ->
+          <p>▶ <a href="index.php?page=publications">Gestion des publications</a></p>
+          <p>▶ <a href="index.php?page=medias">Gestion des médias</a></p>
+          <p>▶ <a href="index.php?page=participation">Formulaire de participation</a></p>
+          <p>▶ <a href="index.php?page=participants">Liste des participants</a></p>
+          <p>▶ <a href="index.php?page=postuler">Formulaire pour les postulants</a></p>
+          <p>▶ <a href="index.php?page=postulants">Liste des postulants</a></p>
+          <p>▶ <a href="index.php?page=newsletter">Liste des inscrits à la newsletter</a></p>
+
+      </div>
+    </div>
+
+</main>
+
+
+{% endblock %}

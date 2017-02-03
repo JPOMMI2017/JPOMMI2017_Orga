@@ -1,0 +1,215 @@
+
+
+
+@font-face {
+    font-family: OpenSans, Montserrat, LibreBaskerville;
+}
+
+body {
+    font-family: OpenSans-Regular, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 26px;
+    color: white;
+}
+
+
+#titre-baskerville {
+    font-family: LibreBaskerville, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#cadre-titre-baskerville {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: inline-block;
+}
+
+a {
+    color: #484e79;
+}
+
+
+h2, h3 {
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+}
+
+h2 {
+    border-bottom: 3px solid #16182b;
+}
+
+h3, h4 {
+    text-align: center;
+}
+
+h4 {
+    font-family: OpenSans-Regular, sans-serif;
+    font-size: 20px;
+}
+
+h5 {
+    font-family: OpenSans-Regular, sans-serif;
+    font-size: 18px;
+}
+
+
+
+/*                                                  FOOTER                              */
+footer {
+    background-color: #a1bbef;
+    color: #16182b;
+}
+
+
+
+
+
+/*                                                  PAGE ACCUEIL                        */
+
+.saut {
+    font-family: OpenSans-Regular, sans-serif;
+}
+
+aside {
+    font-family: OpenSans-Regular, sans-serif;
+}
+
+main {
+    font-family: OpenSans-Regular,sans-serif;
+}
+
+#date {
+    font-family: Montserrat, sans-serif;
+    font-size: 26px;
+    color: white;
+    padding: 15px;
+}
+
+
+
+#horaires {
+    font-family: LibreBaskerville, sans-serif;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+
+#mission-tasks {
+    text-align: center;
+    color: black;
+}
+.white-hstg {
+    color: black;
+}
+
+
+
+.newsletter > p:nth-child(2){
+    font-family: OpenSans-Regular, sans-serif;
+    text-align: center;
+}
+
+label {
+    font-family: OpenSans-Regular, sans-serif;
+    font-size: 14px;
+}
+
+
+
+
+/*                                                      PAGE CONNEXION                          */
+
+p.connexion-sous-titre {
+    font-family: LibreBaskerville, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+}
+
+#connexion-div {
+    background-color: rgba(55, 34, 72, 0.7);
+}
+
+
+
+/*                                              PAGE FORMULAIRE DE PARTICIPATION                */
+.red-star {
+    color: #e03131;
+}
+
+#particip-but {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #e03131;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+
+
+/*                                              PAGE POUR QUELS METIERS                         */
+
+#com-cloud {
+    background-color: #a1bbef;
+}
+
+#design-cloud, #audio-cloud {
+    background-color: white;
+}
+
+#dev-cloud {
+    background-color: #e03131;
+}
+
+
+.cloud li.tag1 { font-size: 3em; font-weight: 100; color: #222222}
+.cloud a.tag2 {
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cloud a.tag3 {
+    font-size: 0.9em;
+    color: #484e79;
+    transition: color 0.3s ease;
+}
+
+.cloud a.tag4 {
+    font-size: 1.6em;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.cloud a.tag5 {
+    font-size: 1em;
+    color: #16182b;
+    transition: color 0.3s ease;
+}
+
+.cloud a.tag6 {
+    font-size: 1.1em;
+    color: #222222;
+    transition: color 0.3s ease;
+}
+
+.cloud a.tag7 {
+    font-size: 1.2em;
+    color: #484e79;
+    transition: color 0.3s ease;
+}

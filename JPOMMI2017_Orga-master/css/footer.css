@@ -1,0 +1,39 @@
+footer {
+    padding-top: 2px;
+    padding-left: 30px;
+    padding-bottom: 1px;
+    padding-right: 30px;
+
+}
+
+li {
+    list-style: none;
+}
+
+.rs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rs > li > a > img {
+    width: 2em;
+}
+
+.mentions-legales {
+    display: flex;
+    justify-content: center;
+}
+.mentions-legales>li>a>img {
+    width: 7em;
+}
+
+footer > div {
+    width: 33%;
+    display: table-cell;
+    padding: 50px;
+    padding-top: 0;
+}
+
+.footer{
+    padding: 0;
+}

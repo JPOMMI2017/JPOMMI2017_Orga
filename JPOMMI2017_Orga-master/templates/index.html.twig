@@ -1,0 +1,162 @@
+{% extends 'general.html.twig' %}
+
+{% block title %}<title>JPO MMI - Accueil</title>{% endblock %}
+
+{% block body %}
+
+
+    <div class="video_accueil">
+        <video autoplay loop src="images-contenu/video.mp4"></video>
+    </div>
+
+    <div class="intro2">
+        <div>
+            <h1>Département MMI</h1>
+            <div id="cadre-titre-baskerville">
+                <h1 id="titre-baskerville">Journée Portes Ouvertes</h1>
+            </div>
+        </div>
+
+        <div>
+            <p id="date" class="transparent">4 FÉVRIER 2017</p>
+            <p id="horaires">9h - 17h</p>
+        </div>
+
+        <a href="#ancre" class="transparent link-but">Découvrir</a>
+        <a href="index.php?page=connexion" class="transparent link-but">Je participe !</a>
+
+        <ul class="countdown">
+            <li>
+                <span class="days"></span>
+
+                <p class="timeRefDays"></p>
+            </li>
+            <li>
+                <span class="hours"></span>
+
+                <p class="timeRefHours"></p>
+            </li>
+            <li>
+                <span class="minutes"></span>
+
+                <p class="timeRefMinutes"></p>
+            </li>
+            <li>
+                <span class="seconds"></span>
+
+                <p class="timeRefSeconds" id="ancre"></p>
+            </li>
+        </ul>
+        <script src='js/countdown/jquery.min.js'></script>
+        <script async src="js/countdown/countdown.js"></script>
+
+    </div>
+
+
+    <div class="video">
+        <h1>MMI, c'est quoi ?</h1>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/05RIEadiOh0" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+
+
+    <aside>
+        <img src="images-contenu/mmi-batiment-01.jpg" alt="batiment">
+        <h2 id="ancrage">Ta Mission</h2>
+        <div>
+            <p>Ta mission consiste à infiltrer le département MMI de Montbéliard lors
+                de la Journée Portes Ouvertes du Nord Franche-Comté.</p>
+            <div id="mission-tasks">
+                <p>→ Visite le batiment</p>
+                <p>→ Questionne les professeurs</p>
+                <p>→ Échange avec les étudiants</p>
+                <p>→ Donne un coup de pouce à ton admission</p>
+            </div>
+        </div>
+    </aside>
+
+    <main class="kesako">
+        <img src="images-contenu/mmi-students.jpg" alt="students">
+        <h2>Késako ?</h2>
+        <p>Il s’agit de la Journée Portes Ouvertes du <a href="http://mmimontbeliard.com/formation-mmi">DUT MMI</a>
+            et de la
+            <a href="http://mmimontbeliard.com/formation-lpwd#">Licence Pro Webdesign</a>.</p>
+        <div>
+            <p>Tu es passionné par le web, l’audiovisuel ou le graphisme ?</p>
+            <p>Tu es un programmeur dans l’âme ?</p>
+            <p>Fervent connaisseur des réseaux sociaux, tu souhaites devenir community-manager ?</p>
+            <p>Pleins de débouchés professionnels s’offrent à toi alors n’attends plus et viens découvrir MMI
+                !</p>
+        </div>
+
+    </main>
+
+    <aside class="saut">
+        <p id="map"></p>
+        <h2>Infos Pratiques</h2>
+        <div id="adresse">
+            <p class="p-centrer">4, place Tharradin</p>
+            <p class="p-centrer"> au pôle universitaire des Portes du Jura</p>
+            <p class="p-centrer"></p>
+            <p class="p-centrer">25 200 | Montbéliard</p>
+        </div>
+        <p class="p-centrer">→ Prévoir environ 2 heures pour une visite complète.</p>
+    </aside>
+
+    <aside>
+      <h4 class=p-centrer>Réagis sur les réseaux sociaux avec <span class="white-hstg">#JPO #MMI2017</span></h4>
+    </aside>
+
+    <div class="newsletter">
+        <h1>Newsletter</h1>
+
+        <p>Inscris-toi à notre newsletter pour être tenu informé en exclusivité de l'actualité de la JPO MMI 2017.</p>
+
+        <div class="red-block news-block">
+            <div>
+                <label>Ton Nom :</label>
+
+                <p><input type="text" name="nom" size="45px" class="form-control"></p>
+            </div>
+            <div>
+                <label>Ton Prénom :</label>
+
+                <p><input type="text" name="prenom" size="45px" class="form-control"></p>
+            </div>
+            <div>
+                <label>Ton Mail :</label>
+
+                <p><input type="text" name="mail" size="45px" class="form-control"></p>
+            </div>
+            <div id="pad-but-env">
+                <button id="news-but">ENVOYER</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <script>
+        function initMap() {
+            var latlngMap = {lat: 47.495535, lng: 6.805265};
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: latlngMap,
+                zoom: 17
+            });
+
+            var marqueur = new google.maps.Marker({
+                position: latlngMap,
+                map: map,
+                title: 'JPO MMI Montbéliard'
+            });
+
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7gfdSoZhXFhAvluQlL7DfANeRdjGLhSU&callback=initMap"></script>
+
+
+
+{% endblock body %}

@@ -13,10 +13,13 @@ li {
 .rs {
     display: flex;
     justify-content: space-between;
+    width: 20%;
 }
 
 .rs > li > a > img {
     width: 2em;
+    padding: 5px;
+    margin: 0;
 }
 
 .mentions-legales {
@@ -34,6 +37,6 @@ footer > div {
     padding-top: 0;
 }
 
-.footer{
+footer{
     padding: 0;
 }

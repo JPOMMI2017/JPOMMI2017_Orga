@@ -1,0 +1,30 @@
+{% extends 'general.html.twig' %}
+
+{% block title %}<title>JPO MMI - Connexion</title>{% endblock %}
+
+{% block body %}
+
+
+    <main id="connexion">
+        <section id="connexion-section">
+            <div id="connexion-div">
+                <h3>JPO MMI</h3>
+                <p class="connexion-sous-titre">Espace de connexion pour l'administration et toute personne liée à notre Département qui souhaiterait participer bénévolement à la JPO MMI.</p>
+                <div id="connex-block">
+                    <h4>Connexion</h4>
+                    <div>
+                        <img src="images-contenu/avatar.png" alt="idt" class="icon-connex">
+                        <p class="p-inline"><input type="text" name="idt-ent" size="30px"></p>
+                    </div>
+                    <div>
+                        <img src="images-contenu/padlock.png" alt="mdp" class="icon-connex">
+                        <p class="p-inline"><input type="password" name="mdp-ent" size="30px"></p>
+                    </div>
+                    <a href="index.php?page=indexUser"><button class="connex-but">OK</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+{% endblock body %}

@@ -1,0 +1,15 @@
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292.88 292.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <title>mmi-stroke-logo-noir</title>
+  <polygon class="cls-1" points="146.44 2 74.22 290.89 2 128.39 96.27 200.61 38.1 38.12 146.44 164.5 254.77 38.12 196.45 201.05 290.88 128.39 218.66 290.89 146.44 2"/>
+</svg>
